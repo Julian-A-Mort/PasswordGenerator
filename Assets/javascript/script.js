@@ -1,7 +1,4 @@
-// Assignment code here
 
-
-document.addEventListener("DOMContentLoaded", function () {
   // Get references to the elements I want to manipulate on the page
   const generateBtn = document.getElementById("generate");
   const passwordTextArea = document.getElementById("password");
@@ -45,12 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Prompt the user to include or not special characters
       var specialChars = confirm("Include some lovely special characters in the password?");
 
-      // And the generate a lovely password
+      // And then generate a lovely password
       var newPassword = generatePassword(passwordLength, specialChars);
       passwordTextArea.value = newPassword;
   });
-
-  // Add event listener for the text area focus and blur events
-  passwordTextArea.addEventListener("focus", displayMessage);
-  passwordTextArea.addEventListener("blur", clearMessage);
-});
